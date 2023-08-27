@@ -20,7 +20,7 @@ input_array.columns = ['CustomerID','Name','Age','Subscription_Length_Months','M
 
 if st.button('Submit'):
     input_array=input_array.drop(columns=['Name','Total_Usage_GB'], axis=1)
-    with open('onehotencoder.pkl','rb') as f:
+    with open('Churn-prediction-App/onehotencoder.pkl','rb') as f:
         ohe = pkl.load(f)
     
     ohe_GL = ohe.transform(input_array[['Gender','Location']])
