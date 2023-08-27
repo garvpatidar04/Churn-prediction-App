@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-from sklearn.preprocessing import OneHotEncoder
 import pickle as pkl
 
 st.sidebar.title('Classification model for Churn prediction')
